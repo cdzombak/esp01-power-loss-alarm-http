@@ -31,9 +31,9 @@ void setup() {
     pinMode(vccSensPin, INPUT);
 
     #ifdef DEBUG
-        Serial.begin(115200, SERIAL_8N1, SERIAL_TX_ONLY);
+    Serial.begin(115200, SERIAL_8N1, SERIAL_TX_ONLY);
     #else
-        pinMode(ledPin, OUTPUT);
+    pinMode(ledPin, OUTPUT);
     #endif
 
     debug("connecting to WiFi");
